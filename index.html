@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đinh Thị Anh Thư Portfolio</title>
+    <title>Digital Portfolio | Anh Thư</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts hỗ trợ tiếng Việt tối đa -->
+    <!-- Google Fonts hỗ trợ tiếng Việt tối đa, tránh lỗi hiển thị -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -93,7 +93,7 @@
             100% { transform: translate(-15px, 15px) scale(0.95); }
         }
 
-        /* Float Animation for Doodle Rin Itoshi */
+        /* Float Animation cho Doodle Rin Itoshi lơ lửng */
         .rin-doodle {
             animation: floatRin 6s infinite ease-in-out;
             filter: drop-shadow(0 10px 15px rgba(211, 158, 130, 0.25));
@@ -130,7 +130,7 @@
             transform: translateY(0);
         }
 
-        /* Expandable Accordion styles for projects */
+        /* Expandable Accordion styles cho bài tập */
         .project-details {
             max-height: 0;
             overflow: hidden;
@@ -145,7 +145,7 @@
 </head>
 <body class="bg-[#FDFBF7] text-dreamy-charcoal font-sans overflow-x-hidden relative">
 
-    <!-- Trailing Cursor elements (Hidden on mobile) -->
+    <!-- Trailing Cursor elements (Ẩn trên điện thoại) -->
     <div class="custom-cursor hidden md:block" id="customCursor"></div>
     <div class="custom-cursor-dot hidden md:block" id="customCursorDot"></div>
 
@@ -165,11 +165,11 @@
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
                 <a href="#about" class="hover:text-dreamy-accent transition-colors duration-200">Giới thiệu</a>
-                <a href="#projects" class="hover:text-dreamy-accent transition-colors duration-200">Dự án học tập</a>
-                <a href="#reflection" class="hover:text-dreamy-accent transition-colors duration-200">Tổng kết</a>
+                <a href="#projects" class="hover:text-dreamy-accent transition-colors duration-200">Bài tập thực hành</a>
+                <a href="#reflection" class="hover:text-dreamy-accent transition-colors duration-200">Trải nghiệm</a>
                 <a href="https://drive.google.com/drive/folders/13B-kdUqbLM53mpbqaSz-6NutPSOgohBC?usp=drive_link" target="_blank" class="bg-gradient-to-r from-dreamy-rose to-dreamy-gold px-5 py-2.5 rounded-full hover:shadow-md transition-all duration-300 text-dreamy-charcoal flex items-center gap-2 border border-white/40">
                     <i class="fab fa-google-drive text-[#FFC107]"></i>
-                    <span class="font-display font-bold">Xem bài tập trên GG drive</span>
+                    <span class="font-display font-bold">Thư mục Drive bài tập</span>
                 </a>
             </nav>
 
@@ -182,53 +182,53 @@
         <!-- Mobile Dropdown Menu -->
         <div class="hidden md:hidden absolute top-20 left-6 right-6 glass-card rounded-2xl p-6 shadow-xl flex flex-col gap-4 text-center" id="mobileMenu">
             <a href="#about" class="font-medium hover:text-dreamy-accent py-2 border-b border-dreamy-rose/20">Giới thiệu</a>
-            <a href="#projects" class="font-medium hover:text-dreamy-accent py-2 border-b border-dreamy-rose/20">Dự án học tập</a>
-            <a href="#reflection" class="font-medium hover:text-dreamy-accent py-2">Tổng kết</a>
+            <a href="#projects" class="font-medium hover:text-dreamy-accent py-2 border-b border-dreamy-rose/20">Bài tập thực hành</a>
+            <a href="#reflection" class="font-medium hover:text-dreamy-accent py-2">Trải nghiệm</a>
             <a href="https://drive.google.com/drive/folders/13B-kdUqbLM53mpbqaSz-6NutPSOgohBC?usp=drive_link" target="_blank" class="bg-gradient-to-r from-dreamy-rose to-dreamy-gold px-5 py-3 rounded-full text-sm font-semibold text-dreamy-charcoal flex items-center justify-center gap-2 mt-2">
                 <i class="fab fa-google-drive"></i>
-                <span class="font-display font-bold">Xem bài tập trên GG drive</span>
+                <span class="font-display font-bold">Thư mục Drive bài tập</span>
             </a>
         </div>
     </header>
 
-    <!-- NEW ASYMMETRICAL HERO SECTION -->
+    <!-- HERO SECTION -->
     <section class="min-h-screen flex items-center pt-28 pb-16 px-6 md:px-12 max-w-7xl mx-auto relative z-10">
         <div class="w-full flex flex-col space-y-12">
             
-            <!-- Large Bold Centered Title -->
+            <!-- Centered Title -->
             <div class="text-center space-y-4 max-w-4xl mx-auto">
                 <div class="inline-flex items-center gap-2 bg-dreamy-peach/80 border border-dreamy-rose/50 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-dreamy-accent uppercase">
                     <span class="w-2 h-2 rounded-full bg-dreamy-accent animate-pulse"></span>
-                    Digital Portfolio
+                    Portfolio Cá Nhân
                 </div>
                 <h1 class="text-6xl md:text-8xl font-display font-bold leading-tight select-none">
                     <span class="text-dreamy-charcoal">Đinh Thị</span>
                     <span class="text-gradient block font-extrabold italic mt-1 pb-2">Anh Thư</span>
                 </h1>
                 <p class="text-md md:text-lg text-gray-500 font-light max-w-xl mx-auto leading-relaxed">
-                    Khám phá sự giao thoa giữa ngôn ngữ truyền thống và sự bứt phá của công nghệ số ứng dụng trong môi trường học thuật chuyên nghiệp.
+                    Chào mọi người! Đây là góc nhỏ lưu trữ các bài tập thực hành và những trải nghiệm tự học của mình trong môn Công nghệ số & Ứng dụng AI.
                 </p>
             </div>
 
-            <!-- Dashboard/Collage Layout Row -->
+            <!-- Bento/Dashboard Row -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch w-full">
                 
-                <!-- Card 1: Avatar with floating Rin Doodle -->
+                <!-- Avatar Card kèm Doodle Rin Itoshi -->
                 <div class="lg:col-span-5 glass-card rounded-[32px] p-6 flex items-center justify-center relative min-h-[360px] border border-white/60 shadow-md">
                     <div class="relative w-64 h-80 rounded-[24px] overflow-hidden shadow-lg border border-white/40">
                         <img src="Hình 1.jpg" alt="Đinh Thị Anh Thư" class="w-full h-full object-cover filter contrast-[1.02]">
                     </div>
                     
-                    <!-- FLOATING ITOSHI RIN DOODLE sticker style -->
+                    <!-- DOODLE STICKER RIN ITOSHI -->
                     <div class="absolute -top-6 -right-6 w-32 md:w-36 rin-doodle z-20">
                         <img src="RinItoshi.png" alt="Itoshi Rin Doodle" class="w-full h-auto select-none pointer-events-none">
                     </div>
                 </div>
 
-                <!-- Card 2: Student Identity Dashboard -->
+                <!-- Student Identity Card -->
                 <div class="lg:col-span-7 flex flex-col justify-between gap-6">
                     <div class="glass-card p-8 rounded-[32px] border border-white/60 shadow-md flex-1 space-y-4 flex flex-col justify-center">
-                        <p class="text-xs uppercase tracking-widest text-dreamy-accent font-bold"><i class="fa-solid fa-graduation-cap mr-1"></i> Thông tin học viên</p>
+                        <p class="text-xs uppercase tracking-widest text-dreamy-accent font-bold"><i class="fa-solid fa-graduation-cap mr-1"></i> Thông tin học tập</p>
                         <h2 class="text-2xl md:text-3xl font-display font-bold text-dreamy-charcoal">Đại học Ngoại Ngữ - ĐHQGHN</h2>
                         
                         <div class="grid grid-cols-2 gap-4 text-xs md:text-sm text-gray-600 font-light pt-2">
@@ -246,19 +246,19 @@
                             </div>
                             <div class="bg-[#FDFBF7]/60 p-3 rounded-2xl border border-gray-100">
                                 <span class="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Môn học</span>
-                                <span class="font-medium text-dreamy-accent">Công nghệ số & Ứng dụng AI</span>
+                                <span class="font-medium text-dreamy-accent">Nhập môn CNS & Ứng dụng AI</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Call To Actions inline card -->
+                    <!-- Call To Actions -->
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#projects" class="flex-1 bg-dreamy-charcoal text-white hover:bg-dreamy-accent hover:shadow-lg py-4 rounded-2xl text-center font-display font-bold transition-all duration-300 flex items-center justify-center gap-2 group">
                             Xem các bài tập thực hành
                             <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </a>
                         <a href="#about" class="flex-1 glass-card text-dreamy-charcoal hover:bg-white py-4 rounded-2xl text-center font-display font-bold transition-all duration-300 border border-dreamy-rose/50">
-                            Tìm hiểu định hướng bản thân
+                            Tìm hiểu về mình nhé
                         </a>
                     </div>
                 </div>
@@ -268,14 +268,14 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION - NEW BENTO GRID LAYOUT -->
+    <!-- ABOUT SECTION - BENTO GRID -->
     <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto relative z-10 reveal">
         <div class="space-y-12">
             
             <!-- Section Title -->
             <div class="space-y-3">
-                <p class="text-sm uppercase tracking-widest text-dreamy-accent font-bold">Giới thiệu tổng quan</p>
-                <h2 class="text-4xl md:text-5xl font-display font-bold text-dreamy-charcoal">Bản Thân & Sứ Mệnh Học Tập</h2>
+                <p class="text-sm uppercase tracking-widest text-dreamy-accent font-bold">Giới thiệu ngắn</p>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-dreamy-charcoal">Một chút về bản thân mình</h2>
                 <div class="w-16 h-1 bg-dreamy-accent rounded-full"></div>
             </div>
 
@@ -285,21 +285,21 @@
                 <!-- Bento Block 1: Main Quote -->
                 <div class="md:col-span-8 glass-card p-8 rounded-[32px] border border-white/60 shadow-sm flex flex-col justify-center space-y-4">
                     <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed">
-                        Chào bạn! Tôi là <strong class="font-bold text-dreamy-charcoal">Đinh Thị Anh Thư</strong>. Việc kết hợp kiến thức văn hóa nền tảng Nhật Bản với làn sóng trí tuệ nhân tạo (Generative AI) là cơ hội để tôi chứng minh năng lực tự thích nghi của thế hệ sinh viên hiện đại.
+                        Chào mọi người, mình là <strong class="font-bold text-dreamy-charcoal">Anh Thư</strong>. Là một sinh viên ngoại ngữ, mình nhận ra việc kết hợp học tiếng Nhật với ứng dụng công nghệ thực sự mang lại rất nhiều trải nghiệm tự học thú vị và tiện lợi.
                     </p>
                     <p class="text-sm text-gray-500 font-light">
-                        Hành trình học tập này giúp tôi định hình lại phương pháp phân tích tư duy ngôn ngữ học, rèn luyện kỹ năng làm việc số chuẩn mực và hướng tới vai trò năng động hơn trong công việc tương lai.
+                        Môn học này đã giúp mình có một cái nhìn rất mới về cách công cụ số và AI hỗ trợ chúng ta học từ vựng, viết luận tiếng Nhật hiệu quả, cũng như rèn luyện cách quản lý công việc và làm việc nhóm khoa học hơn.
                     </p>
                 </div>
 
-                <!-- Bento Block 2: Quick Badge -->
+                <!-- Bento Block 2: Hobby/Major Badge -->
                 <div class="md:col-span-4 bg-gradient-to-tr from-dreamy-rose to-dreamy-gold p-8 rounded-[32px] border border-white flex flex-col justify-between shadow-sm">
                     <div class="w-12 h-12 rounded-2xl bg-white/60 flex items-center justify-center text-dreamy-accent">
-                        <i class="fa-solid fa-language text-lg"></i>
+                        <i class="fa-solid fa-heart text-lg"></i>
                     </div>
                     <div class="space-y-1 pt-8">
-                        <h4 class="font-display font-bold text-dreamy-charcoal">Ngôn Ngữ Nhật Bản</h4>
-                        <p class="text-xs text-gray-600 font-light">Chinh phục rào cản ngữ nghĩa sâu (Pragmatics), kính ngữ tinh tế của Nhật ngữ bằng công nghệ mới.</p>
+                        <h4 class="font-display font-bold text-dreamy-charcoal">Ngoại ngữ & Công nghệ</h4>
+                        <p class="text-xs text-gray-600 font-light">Vừa mê tiếng Nhật vừa thích tìm tòi công nghệ. Mình luôn cố gắng kết hợp cả hai để việc học tập bớt nhàm chán.</p>
                     </div>
                 </div>
 
@@ -308,9 +308,9 @@
                     <div class="w-12 h-12 rounded-2xl bg-dreamy-peach flex items-center justify-center text-dreamy-accent">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <h4 class="font-display font-bold text-dreamy-charcoal text-lg">Mục Tiêu Công Nghệ Số</h4>
+                    <h4 class="font-display font-bold text-dreamy-charcoal text-lg">Mục tiêu của mình</h4>
                     <p class="text-sm text-gray-500 font-light leading-relaxed">
-                        Xây dựng chiến lược phân tích thông tin học thuật nghiêm ngặt. Sử dụng các mô hình tạo sinh như Gemini, Canva AI, Firefly để tối ưu hóa hiệu suất thiết kế truyền thông mà vẫn giữ vững liêm chính học thuật.
+                        Học cách làm chủ các công cụ hỗ trợ như tìm kiếm học thuật, viết câu lệnh (Prompt) và thiết kế cơ bản để giải quyết các bài tập nhanh, gọn và chất lượng hơn.
                     </p>
                 </div>
 
@@ -319,9 +319,9 @@
                     <div class="w-12 h-12 rounded-2xl bg-dreamy-sage flex items-center justify-center text-dreamy-accent">
                         <i class="fa-solid fa-compass"></i>
                     </div>
-                    <h4 class="font-display font-bold text-dreamy-charcoal text-lg">Định Hướng Phát Triển</h4>
+                    <h4 class="font-display font-bold text-dreamy-charcoal text-lg">Định hướng tương lai</h4>
                     <p class="text-sm text-gray-500 font-light leading-relaxed">
-                        Chuyển đổi từ tư duy dịch thuật truyền thống sang nghiên cứu dịch thuật tự nhiên kết hợp hiệu đính tự động, trở thành một nhân tố thành thạo công cụ thông minh, tự tin làm việc trong không gian toàn cầu.
+                        Không chỉ dừng lại ở cách học dịch thuật hay nghiên cứu cũ, mình mong muốn ứng dụng công nghệ để nâng cao hiệu suất làm việc thực tế, sẵn sàng cho môi trường làm việc số sau khi ra trường.
                     </p>
                 </div>
 
@@ -334,26 +334,26 @@
     <section class="py-12 px-6 md:px-12 max-w-7xl mx-auto relative z-10 reveal">
         <div class="bg-gradient-to-r from-dreamy-peach via-dreamy-gold to-white rounded-[32px] p-8 md:p-12 border border-white/70 shadow-md flex flex-col lg:flex-row justify-between items-center gap-8">
             <div class="space-y-3 text-center lg:text-left">
-                <span class="bg-white/75 text-dreamy-accent text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-white">Hồ sơ minh chứng</span>
-                <h3 class="text-2xl md:text-3xl font-display font-bold text-dreamy-charcoal">Kho Lưu Trữ Bài Tập Thực Tế Trên Drive</h3>
-                <p class="text-sm text-gray-500 font-light max-w-xl">Bao gồm tất cả tệp tin báo cáo văn bản gốc, hình ảnh minh họa quá trình tác nghiệp và file lưu trữ phục vụ môn học.</p>
+                <span class="bg-white/75 text-dreamy-accent text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-white">Thư mục Drive</span>
+                <h3 class="text-2xl md:text-3xl font-display font-bold text-dreamy-charcoal">Xem các bài tập gốc của mình</h3>
+                <p class="text-sm text-gray-500 font-light max-w-xl">Để xem chi tiết hơn các file văn bản, slide thuyết trình và ảnh chụp màn hình thao tác thực tế, bạn ghé qua thư mục Drive của mình nha!</p>
             </div>
             <a href="https://drive.google.com/drive/folders/13B-kdUqbLM53mpbqaSz-6NutPSOgohBC?usp=drive_link" target="_blank" class="bg-dreamy-charcoal text-white hover:bg-dreamy-accent hover:shadow-xl px-8 py-4 rounded-2xl font-display font-bold tracking-wide transition-all duration-300 flex items-center gap-3 whitespace-nowrap">
                 <i class="fab fa-google-drive text-lg text-[#FFC107]"></i>
-                <span>Xem bài tập trên GG drive</span>
+                <span>Ghé thăm thư mục Drive</span>
             </a>
         </div>
     </section>
 
-    <!-- PORTFOLIO PROJECTS SECTION - NEW INTERACTIVE ACCORDION GRID -->
+    <!-- PORTFOLIO PROJECTS SECTION - INTERACTIVE ACCORDION GRID -->
     <section id="projects" class="py-24 px-6 md:px-12 max-w-7xl mx-auto relative z-10 reveal">
         
         <!-- Section Header -->
         <div class="text-center space-y-4 mb-16">
-            <p class="text-sm uppercase tracking-widest text-dreamy-accent font-bold">Danh mục thực hành</p>
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-dreamy-charcoal">Dự Án & Bài Thực Hành Cá Nhân</h2>
+            <p class="text-sm uppercase tracking-widest text-dreamy-accent font-bold">Danh sách bài tập</p>
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-dreamy-charcoal">Các dự án mình đã thực hiện</h2>
             <div class="w-20 h-1 bg-dreamy-accent rounded-full mx-auto"></div>
-            <p class="text-gray-500 font-light max-w-lg mx-auto">Nhấp vào từng bài để mở rộng xem báo cáo phân tích chi tiết, mục tiêu và kết quả đạt được.</p>
+            <p class="text-gray-500 font-light max-w-lg mx-auto">Dưới đây là 6 bài thực hành từ cơ bản đến nâng cao. Bạn bấm vào từng bài để xem chi tiết cách mình làm nhé.</p>
         </div>
 
         <!-- Interactive Accordion Stack -->
@@ -366,8 +366,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">1</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 1: Thao tác Cơ bản với Tệp tin & Thư mục</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Hệ thống máy tính & Hệ điều hành</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 1: Quản lý tệp tin và thư mục khoa học</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Thao tác cơ bản với hệ điều hành</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -376,29 +376,29 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Mục tiêu là nắm vững phương pháp tổ chức dữ liệu một cách logic và nhất quán trên ổ đĩa cá nhân. Báo cáo minh chứng quá trình xây dựng cấu trúc tệp an toàn, đổi tên mở rộng định dạng, sao chép và di chuyển tệp có quy hoạch.
+                            Mục tiêu của bài này là giúp mình làm quen với việc sắp xếp tài nguyên trên máy tính gọn gàng và dễ tìm kiếm. Mình đã thực hành tạo các cấp thư mục, đặt tên tệp thống nhất, sao chép, di chuyển và khôi phục dữ liệu từ Thùng rác.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-3">
-                                <h4 class="font-display font-bold text-xs uppercase tracking-wider text-dreamy-accent">Kết quả thực tế</h4>
+                                <h4 class="font-display font-bold text-xs uppercase tracking-wider text-dreamy-accent">Tóm tắt các bước làm</h4>
                                 <ul class="space-y-2 text-xs text-gray-500">
                                     <li class="flex gap-2">
                                         <span class="text-dreamy-accent"><i class="fa-solid fa-circle-check"></i></span>
-                                        <span>Tạo thành công thư mục gốc <strong class="text-dreamy-charcoal font-medium">ThucHanh_DinhThiAnhThu</strong> tại ổ D:</span>
+                                        <span>Tạo thư mục chính <strong class="text-dreamy-charcoal font-medium">ThucHanh_DinhThiAnhThu</strong> ở ổ D.</span>
                                     </li>
                                     <li class="flex gap-2">
                                         <span class="text-dreamy-accent"><i class="fa-solid fa-circle-check"></i></span>
-                                        <span>Khởi tạo tệp văn bản <strong class="text-dreamy-charcoal font-medium">GhiChuQuanTrong.txt</strong> bằng Notepad.</span>
+                                        <span>Tạo tệp văn bản nháp, sau đó đổi tên thành tệp lưu trữ <strong class="text-dreamy-charcoal font-medium">GhiChuQuanTrong.txt</strong>.</span>
                                     </li>
                                     <li class="flex gap-2">
                                         <span class="text-dreamy-accent"><i class="fa-solid fa-circle-check"></i></span>
-                                        <span>Tách biệt tài nguyên khoa học thông qua thư mục con <strong class="text-dreamy-charcoal font-medium">TaiLieu</strong>.</span>
+                                        <span>Tạo thư mục con <strong class="text-dreamy-charcoal font-medium">TaiLieu</strong> để tập quản lý chia nhỏ dữ liệu.</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="bg-stone-900 text-stone-300 p-4 rounded-2xl font-mono text-xs">
-                                <span class="text-stone-500">// Mô phỏng hệ thống thư mục</span>
-                                <p class="text-yellow-400"><i class="fa-regular fa-folder mr-1"></i> Volume (D:)</p>
+                                <span class="text-stone-500">// Cấu trúc cây thư mục mình làm</span>
+                                <p class="text-yellow-400"><i class="fa-regular fa-folder mr-1"></i> Ổ đĩa (D:)</p>
                                 <p class="pl-4 text-orange-300"><i class="fa-regular fa-folder-open mr-1"></i> ThucHanh_DinhThiAnhThu</p>
                                 <p class="pl-8 text-blue-400"><i class="fa-regular fa-file-code mr-1"></i> GhiChuQuanTrong.txt</p>
                                 <p class="pl-8 text-orange-300"><i class="fa-regular fa-folder mr-1"></i> TaiLieu</p>
@@ -416,8 +416,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">2</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 2: Tìm kiếm & Đánh giá Thông tin Học thuật</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Nghiên cứu & Khai thác CSDL khoa học</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 2: Tìm kiếm và Đánh giá Tài liệu Học thuật</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Khai thác và thẩm định nguồn tài nguyên</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -426,13 +426,13 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <div>
-                            <p class="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">Chủ đề nghiên cứu lựa chọn:</p>
+                            <p class="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">Đề tài mình nghiên cứu:</p>
                             <p class="italic text-gray-700 bg-dreamy-peach/40 p-3 rounded-2xl border border-dreamy-rose/30 leading-relaxed font-light">
-                                "Tác động của Trí tuệ nhân tạo tạo sinh (Generative AI) đến việc phát triển kỹ năng viết (Sakubun/論文) của sinh viên chuyên ngành Ngôn ngữ Nhật tại Việt Nam."
+                                "Tác động của Generative AI đến việc học kỹ năng viết luận (Sakubun) của sinh viên chuyên ngành Ngôn ngữ Nhật tại Việt Nam."
                             </p>
                         </div>
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Báo cáo xây dựng kỹ năng trích lục tài nguyên số uy tín thông qua các CSDL quốc tế lớn như <strong class="text-dreamy-charcoal">Google Scholar, CiNii Research</strong> (Thư viện số cốt lõi của Nhật Bản) và thư viện <strong class="text-dreamy-charcoal">VNU-LIC</strong>. Tiến hành đánh giá 11 nguồn tài liệu học thuật theo ma trận 5 tiêu chí để loại trừ bài báo kém chất lượng.
+                            Mình đã thực hành tìm kiếm các nguồn nghiên cứu chất lượng qua các trang uy tín như <strong class="text-dreamy-charcoal">Google Scholar</strong>, thư viện số <strong class="text-dreamy-charcoal">CiNii Research</strong> của Nhật Bản và thư viện <strong class="text-dreamy-charcoal">VNU-LIC</strong>. Sau đó, mình lập bảng phân tích 11 nguồn tài liệu thu thập được theo các tiêu chí như: uy tín của tác giả, độ cập nhật của thông tin và phương pháp nghiên cứu để đảm bảo độ tin cậy.
                         </p>
                         <div class="overflow-x-auto">
                             <table class="w-full text-left text-xs border-collapse">
@@ -440,19 +440,19 @@
                                     <tr class="border-b border-gray-200 text-gray-400">
                                         <th class="py-2">Tên tài liệu / Năm</th>
                                         <th class="py-2 text-center">Xếp hạng tin cậy</th>
-                                        <th class="py-2 text-right">Ưu điểm phân tích</th>
+                                        <th class="py-2 text-right">Phân tích ưu điểm</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-gray-600 font-light">
                                     <tr class="border-b border-gray-100">
                                         <td class="py-2 font-medium text-dreamy-charcoal">Sato, T. (2023) - Journal of Japanese Language Teaching</td>
-                                        <td class="py-2 text-center text-emerald-600 font-bold">A (Rất cao)</td>
-                                        <td class="py-2 text-right">Tác giả giáo sư đầu ngành tại Đại học Tokyo. Phương pháp định lượng nghiêm ngặt.</td>
+                                        <td class="py-2 text-center text-emerald-600 font-bold">Rất cao (A)</td>
+                                        <td class="py-2 text-right">Tác giả là giáo sư Đại học Tokyo. Khảo sát kỹ lưỡng và khách quan về sửa lỗi của ChatGPT.</td>
                                     </tr>
                                     <tr class="border-b border-gray-100">
-                                        <td class="py-2 font-medium text-dreamy-charcoal">Nguyen & Tran (2024) - Tạp chí ULIS</td>
-                                        <td class="py-2 text-center text-emerald-500 font-bold">B (Cao)</td>
-                                        <td class="py-2 text-right">Cơ quan xuất bản uy tín, mẫu thực chứng lớn (n=350) tại Hà Nội.</td>
+                                        <td class="py-2 font-medium text-dreamy-charcoal">Nguyen & Tran (2024) - Tạp chí Nghiên cứu Nước ngoài (ULIS)</td>
+                                        <td class="py-2 text-center text-emerald-500 font-bold">Cao (B)</td>
+                                        <td class="py-2 text-right">Nguồn xuất bản uy tín từ trường mình, dữ liệu khảo sát thực tế (n=350) tại Hà Nội.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -468,8 +468,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">3</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 3: Viết Prompt Hiệu Quả trong Học tập</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Prompt Engineering & Mô hình Tư duy</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 3: Cách viết câu lệnh (Prompt) hiệu quả tự học</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Ứng dụng AI hỗ trợ học tiếng Nhật</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -478,19 +478,19 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Nghiên cứu ứng dụng các kỹ thuật thiết kế câu lệnh tiên tiến (Role Prompting, Chain-of-Thought, Few-shot) phục vụ mục tiêu học tập. Thử nghiệm thực tế trên 3 tác vụ học Nhật ngữ cụ thể: Tóm tắt văn bản học thuật Keigo, Phân biệt sắc thái ngữ pháp đồng nghĩa (~wake vs ~hazu), và tạo bộ câu hỏi ôn thi phó từ JLPT N2.
+                            Mình đã học cách xây dựng câu lệnh chi tiết để AI hỗ trợ học tập hiệu quả nhất thay vì chỉ hỏi những câu chung chung. Trải nghiệm thực tế qua 3 tác vụ: dịch thuật Kính ngữ công sở, phân biệt cặp ngữ pháp dễ nhầm lẫn (~wake / ~hazu) và tự tạo đề ôn thi phó từ JLPT N2 kèm lời giải chi tiết.
                         </p>
                         <div class="space-y-4">
                             <div class="flex gap-2">
-                                <button onclick="togglePrompt(this, 'basic'); event.stopPropagation();" class="px-3 py-1 rounded-full bg-dreamy-rose text-dreamy-charcoal font-semibold text-xs">Prompt Cơ bản</button>
-                                <button onclick="togglePrompt(this, 'advanced'); event.stopPropagation();" class="px-3 py-1 rounded-full bg-gray-100 text-gray-400 font-medium text-xs">Prompt Nâng cao (Few-shot + Role)</button>
+                                <button onclick="togglePrompt(this, 'basic'); event.stopPropagation();" class="px-3 py-1 rounded-full bg-dreamy-rose text-dreamy-charcoal font-semibold text-xs">Cách hỏi thông thường</button>
+                                <button onclick="togglePrompt(this, 'advanced'); event.stopPropagation();" class="px-3 py-1 rounded-full bg-gray-100 text-gray-400 font-medium text-xs">Cách hỏi nâng cao (Role + Few-shot)</button>
                             </div>
                             <div class="p-4 rounded-2xl bg-stone-50 border border-gray-100 font-mono text-xs h-32 overflow-y-auto" id="promptText">
                                 "Phân biệt wake và hazu tiếng Nhật."
                             </div>
                             <div class="p-4 rounded-2xl bg-dreamy-gold/40 border border-dreamy-rose/30 text-xs">
-                                <strong class="font-display font-bold block text-dreamy-charcoal mb-2"><i class="fa-solid fa-star text-dreamy-accent mr-1"></i> Sáng tạo Mô hình C-O-A-C-H cho sinh viên Ngoại ngữ:</strong>
-                                <p class="font-light text-gray-500">Hệ thống hóa nguyên tắc viết câu lệnh chuẩn: <strong>C</strong>ontext (Bối cảnh học thuật) - <strong>O</strong>bjective (Mục tiêu đầu ra trực quan) - <strong>A</strong>ctor (Vai diễn chuyên gia) - <strong>C</strong>onstraint (Ranh giới kiểm soát) - <strong>H</strong>ow-to-format (Thiết kế cấu trúc hiển thị).</p>
+                                <strong class="font-display font-bold block text-dreamy-charcoal mb-2"><i class="fa-solid fa-star text-dreamy-accent mr-1"></i> Công thức viết prompt C-O-A-C-H mình đúc rút:</strong>
+                                <p class="font-light text-gray-500">Đặt câu lệnh dễ nhớ: <strong>C</strong>ontext (Bối cảnh học tập của bạn) - <strong>O</strong>bjective (Kết quả bạn cần) - <strong>A</strong>ctor (Vai trò của AI) - <strong>C</strong>onstraint (Ranh giới yêu cầu giữ nguyên từ tiếng Nhật) - <strong>H</strong>ow-to-format (Yêu cầu định dạng bảng biểu để dễ học).</p>
                             </div>
                         </div>
                     </div>
@@ -504,8 +504,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">4</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 4: Sử dụng Công cụ Cộng tác Trực tuyến cho Nhóm</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Quản lý hiệu suất và truyền thông nhóm</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 4: Sử dụng công cụ trực tuyến để làm việc nhóm</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Phối hợp dự án nhóm từ xa</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -514,24 +514,22 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Báo cáo phân tích quá trình tự thiết lập và tối ưu hoá đồng bộ 4 nhóm công cụ trực tuyến chính phục vụ dự án nhóm: <em class="text-dreamy-charcoal font-medium">"Màu thực phẩm tự nhiên có thể thay thế hoàn toàn màu nhân tạo không?"</em>.
+                            Báo cáo ghi lại quá trình tụi mình phối hợp làm bài tập nhóm về đề tài: <em class="text-dreamy-charcoal font-medium">"Màu thực phẩm tự nhiên có thể thay thế hoàn toàn màu nhân tạo không?"</em>. Bằng cách thiết lập hệ thống 4 công cụ hỗ trợ để tối ưu hiệu suất làm việc.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
                             <div class="space-y-3">
-                                <h4 class="font-display font-bold text-dreamy-charcoal">Quy hoạch công cụ cộng tác:</h4>
+                                <h4 class="font-display font-bold text-dreamy-charcoal">Các công cụ nhóm mình dùng:</h4>
                                 <ul class="space-y-2 text-gray-500 font-light">
-                                    <li><strong class="text-dreamy-charcoal">Quản lý dự án (Trello):</strong> Phân chia tác vụ trực quan, thực hiện hơn 10 tương tác hệ thống.</li>
-                                    <li><strong class="text-dreamy-charcoal">Soạn thảo đồng bộ (Google Docs):</strong> Tối ưu bản thảo qua Comment & Suggesting.</li>
-                                    <li><strong class="text-dreamy-charcoal">Lưu trữ chia sẻ (Google Drive):</strong> Cấp quyền truy cập hệ thống thư viện nhóm.</li>
-                                    <li><strong class="text-dreamy-charcoal">Liên lạc tương tác (Google Meet):</strong> Giải quyết thắc mắc trong vòng 15 phút.</li>
+                                    <li><strong class="text-dreamy-charcoal">Trello:</strong> Chia việc rõ ràng, mình đã thực hiện hơn 10 lượt trao đổi trạng thái công việc trên thẻ.</li>
+                                    <li><strong class="text-dreamy-charcoal">Google Docs:</strong> Soạn bài trực tuyến, góp ý và chỉnh sửa trực tiếp.</li>
+                                    <li><strong class="text-dreamy-charcoal">Google Drive & Meet:</strong> Lưu trữ tài liệu chung và thảo luận nhanh khi cần.</li>
                                 </ul>
                             </div>
                             <div class="bg-gray-100 p-4 rounded-2xl border border-gray-200">
-                                <h4 class="font-display font-bold text-dreamy-charcoal mb-2"><i class="fa-solid fa-triangle-exclamation text-amber-500 mr-1"></i> Các thách thức đã giải quyết:</h4>
+                                <h4 class="font-display font-bold text-dreamy-charcoal mb-2"><i class="fa-solid fa-triangle-exclamation text-amber-500 mr-1"></i> Khó khăn và cách tụi mình vượt qua:</h4>
                                 <ul class="space-y-1 text-gray-500 font-light list-disc pl-4">
-                                    <li>Đồng nhất định dạng tài liệu bằng file template chung.</li>
-                                    <li>Kiểm soát tiến độ cập nhật thẻ Trello trước mỗi buổi họp.</li>
-                                    <li>Quản lý chống phân tán thông tin qua bộ lọc thông báo Docs.</li>
+                                    <li>Mỗi người một kiểu căn lề, font chữ -> Tụi mình tạo luôn file mẫu template chung để áp dụng từ đầu.</li>
+                                    <li>Đôi khi quên cập nhật Trello -> Thống nhất cập nhật trạng thái thẻ trước giờ họp nhóm.</li>
                                 </ul>
                             </div>
                         </div>
@@ -546,8 +544,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">5</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 5: Sử dụng AI Tạo sinh Hỗ trợ Sáng tạo Nội dung</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Sáng tạo nội dung số tích hợp đa công cụ</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 5: Sáng tạo nội dung số bằng công cụ AI tạo sinh</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Ứng dụng đa công cụ thiết kế tạp chí</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -556,20 +554,20 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Quản lý tiến trình xây dựng và hoàn thiện ấn phẩm Tạp chí số (E-Magazine) đặc sắc: <strong class="text-dreamy-charcoal font-medium">"Nhật ngữ học trong Kỷ nguyên Số: Bản lĩnh sinh viên ULIS"</strong> nhằm truyền tải giá trị học thuật của chữ Kanji và Kính ngữ Keigo.
+                            Mình đã thiết lập quy trình thiết kế tạp chí số (E-Magazine) có tựa đề: <strong class="text-dreamy-charcoal font-medium">"Nhật ngữ học trong Kỷ nguyên Số: Bản lĩnh sinh viên ULIS"</strong>. Đây là một bài thực hành phối hợp ăn ý giữa các công cụ AI khác nhau.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-light">
                             <div class="bg-blue-50/50 p-4 rounded-2xl border border-blue-100 space-y-2">
                                 <span class="font-bold text-blue-600 block"><i class="fa-solid fa-file-pen mr-1"></i> Google Gemini</span>
-                                <p class="text-gray-500">Tạo lập nội dung văn bản học thuật sâu sắc, xây dựng cấu trúc bài báo và dàn ý khoa học.</p>
+                                <p class="text-gray-500">Giúp mình nghiên cứu lý thuyết, lên ý tưởng nội dung và xây dựng dàn ý chi tiết bài học Kanji và Keigo.</p>
                             </div>
                             <div class="bg-amber-50/50 p-4 rounded-2xl border border-amber-100 space-y-2">
                                 <span class="font-bold text-amber-600 block"><i class="fa-solid fa-image mr-1"></i> Adobe Firefly</span>
-                                <p class="text-gray-500">Phác hoạ trang bìa độc bản từ câu lệnh (Text to Image) thể hiện tinh thần Nhật Bản tương lai.</p>
+                                <p class="text-gray-500">Vẽ ảnh minh hoạ trang bìa độc quyền từ câu lệnh chữ: <em>Một bạn sinh viên đang học Kanji hologram trong thư viện...</em></p>
                             </div>
                             <div class="bg-purple-50/50 p-4 rounded-2xl border border-purple-100 space-y-2">
-                                <span class="font-bold text-purple-600 block"><i class="fa-solid fa-wand-magic mr-1"></i> Canva AI Magic</span>
-                                <p class="text-gray-500">Tự động dựng layout tạp chí, phối ghép hình ảnh, văn bản hài hoà và đồng bộ thẩm mỹ cao.</p>
+                                <span class="font-bold text-purple-600 block"><i class="fa-solid fa-wand-magic mr-1"></i> Canva AI</span>
+                                <p class="text-gray-500">Tự động hóa căn chỉnh bố cục trang tạp chí số, phối màu và căn chỉnh văn bản sao cho hài hòa và dễ nhìn nhất.</p>
                             </div>
                         </div>
                     </div>
@@ -583,8 +581,8 @@
                     <div class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-2xl bg-dreamy-peach flex items-center justify-center text-sm font-bold text-dreamy-accent">6</span>
                         <div>
-                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 6: Sử dụng AI Có Trách nhiệm trong Học tập & Nghiên cứu</h3>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Đạo đức học thuật & Liêm chính số</p>
+                            <h3 class="font-display font-bold text-md md:text-lg text-dreamy-charcoal">Bài 6: Nguyên tắc sử dụng AI có trách nhiệm trong học tập</h3>
+                            <p class="text-[10px] uppercase font-bold text-gray-400">Đạo đức học tập thời đại số</p>
                         </div>
                     </div>
                     <span class="accordion-icon text-gray-400 transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span>
@@ -593,15 +591,15 @@
                 <div class="project-details border-t border-gray-100/50 bg-[#FDFBF7]/35">
                     <div class="p-6 md:p-8 space-y-6 text-sm">
                         <p class="text-gray-500 font-light leading-relaxed">
-                            Nghiên cứu văn bản chính sách ứng dụng công nghệ và bảo vệ Liêm chính học thuật (Academic Integrity) của Đại học Quốc gia Hà Nội (VNU). Đối chiếu với các trường đại học lớn như RMIT, Harvard để tự thiết lập bộ nguyên tắc cá nhân vững vàng.
+                            Mình đã tìm hiểu về chính sách Liêm chính học thuật (Academic Integrity) của Đại học Quốc gia Hà Nội (VNU) và đối chiếu với xu hướng quốc tế để tự xây dựng bộ nguyên tắc tự học thông minh mà không lạm dụng hay phụ thuộc quá đà vào máy móc.
                         </p>
                         <div class="bg-white p-5 rounded-2xl border border-gray-100 space-y-3 shadow-inner text-xs">
-                            <h4 class="font-display font-bold text-dreamy-charcoal uppercase tracking-wider"><i class="fa-solid fa-shield-halved text-dreamy-accent mr-1"></i> Bộ quy tắc Liêm chính số cá nhân:</h4>
+                            <h4 class="font-display font-bold text-dreamy-charcoal uppercase tracking-wider"><i class="fa-solid fa-shield-halved text-dreamy-accent mr-1"></i> Quy tắc sử dụng AI của riêng mình:</h4>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-500 font-light">
-                                <p>• <strong class="text-dreamy-charcoal">Tư duy đi trước, AI theo sau:</strong> Chỉ tìm tới trợ lý AI sau khi bản thân đã tự lực nghiên cứu và đọc tài liệu.</p>
-                                <p>• <strong class="text-dreamy-charcoal">Khai báo minh bạch:</strong> Ghi nhận đầy đủ việc sử dụng công cụ AI trong phần tài liệu tham khảo theo quy chuẩn APA.</p>
-                                <p>• <strong class="text-dreamy-charcoal">Kiểm chứng tối cao:</strong> Nghiêm cấm tin cậy hoàn toàn số liệu AI cung cấp mà không tra cứu chéo các văn bản chính thống.</p>
-                                <p>• <strong class="text-dreamy-charcoal">Cá nhân hóa nội dung:</strong> Xới nhào và biên tập lại toàn bộ văn bản đầu ra theo sắc thái trải nghiệm cá nhân của riêng mình.</p>
+                                <p>• <strong class="text-dreamy-charcoal">Tư duy đi trước, AI theo sau:</strong> Chỉ tìm tới AI sau khi bản thân đã tự suy nghĩ kỹ và định hướng rõ ràng bài làm.</p>
+                                <p>• <strong class="text-dreamy-charcoal">Khai báo rõ ràng:</strong> Ghi chú đầy đủ việc sử dụng công cụ AI nào và cho mục đích gì vào cuối báo cáo.</p>
+                                <p>• <strong class="text-dreamy-charcoal">Kiểm chứng thông tin:</strong> Luôn tra cứu chéo các tài liệu chính thống (sách, bài báo khoa học) để sửa các số liệu chưa chuẩn từ AI.</p>
+                                <p>• <strong class="text-dreamy-charcoal">Biên tập cá nhân hóa:</strong> Chỉnh sửa văn bản AI gợi ý theo đúng giọng điệu và chèn trải nghiệm cá nhân của mình.</p>
                             </div>
                         </div>
                     </div>
@@ -612,14 +610,14 @@
 
     </section>
 
-    <!-- PORTFOLIO REFLECTION SECTION (Trang Tổng kết) -->
+    <!-- PORTFOLIO REFLECTION SECTION -->
     <section id="reflection" class="py-24 px-6 md:px-12 max-w-7xl mx-auto relative z-10 reveal">
         <div class="glass-card rounded-[40px] p-8 md:p-14 border border-white/60 shadow-xl space-y-8">
             
             <!-- Header -->
             <div class="space-y-3 text-center">
-                <p class="text-xs uppercase tracking-widest text-dreamy-accent font-bold">Tổng kết hành trình</p>
-                <h2 class="text-3xl md:text-5xl font-display font-bold text-dreamy-charcoal">Hành Trình Số & Bước Đệm Tương Lai</h2>
+                <p class="text-xs uppercase tracking-widest text-dreamy-accent font-bold">Tổng kết của mình</p>
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-dreamy-charcoal">Những bài học quý giá sau môn học</h2>
                 <div class="w-16 h-0.5 bg-dreamy-accent rounded-full mx-auto"></div>
             </div>
 
@@ -628,17 +626,17 @@
                 
                 <div class="lg:col-span-8 space-y-6 text-gray-600 font-light leading-relaxed">
                     <p>
-                        Dự án Digital Portfolio cá nhân này không chỉ là nơi lưu trữ và chứng minh những kỹ năng số đã thu nhận trong suốt học phần học tập, mà nó chính là cột mốc phản ánh sự trưởng thành sâu sắc trong tư duy nghiên cứu của bản thân tôi.
+                        Trang Portfolio này không chỉ là nơi mình nộp bài tập mà còn ghi dấu sự thay đổi trong cách tư duy học tập của mình từ khi tiếp cận môn học Công nghệ số & Ứng dụng AI.
                     </p>
                     <p>
-                        Từ những thao tác tổ chức dữ liệu cơ bản ban đầu trên máy tính ở <strong class="text-dreamy-charcoal font-medium">Bài 1</strong>, tôi đã từng bước làm chủ kỹ năng tìm kiếm học thuật chuyên sâu ở <strong class="text-dreamy-charcoal font-medium">Bài 2</strong>, khám phá tiềm năng của công nghệ Prompt để phục vụ việc học ở <strong class="text-dreamy-charcoal font-medium">Bài 3</strong>, trải nghiệm học tập và cộng tác nhóm ăn ý tại <strong class="text-dreamy-charcoal font-medium">Bài 4</strong>, và thực sự thăng hoa trong tư duy thiết kế, sáng tạo tạp chí số học thuật cùng AI ở <strong class="text-dreamy-charcoal font-medium">Bài 5</strong>. Cuối cùng, <strong class="text-dreamy-charcoal font-medium">Bài 6</strong> đã neo giữ tôi lại với ý thức sâu sắc về ranh giới đạo đức, sự liêm chính học thuật cần thiết khi đồng hành cùng công nghệ.
+                        Bắt đầu từ những thao tác quản lý dữ liệu cơ bản ở <strong class="text-dreamy-charcoal font-medium">Bài 1</strong>, mình đã học cách nghiên cứu và chọn lọc nguồn học liệu ở <strong class="text-dreamy-charcoal font-medium">Bài 2</strong>, khám phá kỹ thuật viết prompt ở <strong class="text-dreamy-charcoal font-medium">Bài 3</strong>, trải nghiệm làm việc nhóm thực tế ở <strong class="text-dreamy-charcoal font-medium">Bài 4</strong>, và thực hành thiết kế ấn phẩm ở <strong class="text-dreamy-charcoal font-medium">Bài 5</strong>. Cuối cùng, <strong class="text-dreamy-charcoal font-medium">Bài 6</strong> giúp mình có ý thức rõ ràng hơn về liêm chính học thuật để tự lực vươn lên trong học tập.
                     </p>
                     <p class="font-normal text-dreamy-charcoal text-md italic border-l-4 border-dreamy-accent/60 pl-4 py-1">
-                        "Công nghệ số và Trí tuệ nhân tạo không thay thế tư duy và sự nhạy cảm ngôn ngữ của con người, nhưng nó chắp cánh cho những ý tưởng bứt phá khỏi những khuôn mẫu cũ, hướng tới sự hoàn thiện và kết nối không giới hạn."
+                        "Mình nhận ra AI hay công cụ số suy cho cùng cũng chỉ là người trợ lý đắc lực. Giá trị thực sự nằm ở cách chúng ta định hướng, kiểm chứng thông tin và lồng ghép tư duy của chính mình vào sản phẩm."
                     </p>
                 </div>
 
-                <!-- Key accomplishments interactive badges list -->
+                <!-- Key accomplishments list -->
                 <div class="lg:col-span-4 space-y-4">
                     <div class="bg-gradient-to-tr from-dreamy-rose to-dreamy-gold p-6 rounded-3xl border border-white space-y-4">
                         <p class="font-display font-bold text-dreamy-charcoal text-sm uppercase tracking-wider"><i class="fa-solid fa-feather mr-2 text-dreamy-accent"></i>Giá trị đọng lại</p>
@@ -646,19 +644,19 @@
                         <div class="space-y-3 text-xs font-light">
                             <div class="flex gap-3">
                                 <span class="text-dreamy-charcoal"><i class="fa-solid fa-check"></i></span>
-                                <span>Tư duy tổ chức dữ liệu logic, nhất quán.</span>
+                                <span>Thói quen quản lý dữ liệu máy tính ngăn nắp.</span>
                             </div>
                             <div class="flex gap-3">
                                 <span class="text-dreamy-charcoal"><i class="fa-solid fa-check"></i></span>
-                                <span>Kỹ năng phân tích, lọc thông tin đa chiều.</span>
+                                <span>Kỹ năng tìm kiếm, thẩm định nguồn tin cậy.</span>
                             </div>
                             <div class="flex gap-3">
                                 <span class="text-dreamy-charcoal"><i class="fa-solid fa-check"></i></span>
-                                <span>Làm chủ công nghệ Generative AI có chọn lọc.</span>
+                                <span>Biết ứng dụng AI hỗ trợ học tập một cách thông minh.</span>
                             </div>
                             <div class="flex gap-3">
                                 <span class="text-dreamy-charcoal"><i class="fa-solid fa-check"></i></span>
-                                <span>Nâng cao tinh thần trách nhiệm và liêm chính học thuật.</span>
+                                <span>Giữ gìn sự trung thực và tự giác trong học tập.</span>
                             </div>
                         </div>
                     </div>
@@ -679,8 +677,8 @@
 
             <div class="flex justify-center gap-6 text-sm">
                 <a href="#about" class="hover:text-dreamy-accent transition-colors duration-200">Giới thiệu</a>
-                <a href="#projects" class="hover:text-dreamy-accent transition-colors duration-200">Dự án</a>
-                <a href="#reflection" class="hover:text-dreamy-accent transition-colors duration-200">Tổng kết</a>
+                <a href="#projects" class="hover:text-dreamy-accent transition-colors duration-200">Bài tập</a>
+                <a href="#reflection" class="hover:text-dreamy-accent transition-colors duration-200">Trải nghiệm</a>
             </div>
 
             <div class="text-center md:text-right text-xs text-gray-400 space-y-1">
